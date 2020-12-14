@@ -1,7 +1,7 @@
 <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" style="text-transform:uppercase;font-size:1.25rem;font-weight:bold">
-     Credit Card Info
+      Credit Card Info
     </a>
   </div>
 </nav>
@@ -10,14 +10,10 @@
 <div class="custom-container">
   <div class="columns">
     <div class="column">
-      <app-card
-        [name]="cardForm.get('name').value"
-        [cardNumber]="cardForm.get('cardNumber').value"
-        [expiration]="cardForm.get('expiration').value"
-      ></app-card>
+      <app-card [name]="cardForm.get('name').value" [cardNumber]="cardForm.get('cardNumber').value" [expiration]="cardForm.get('expiration').value"></app-card>
     </div>
 
-    <div class="column">
+    <div class="column form">
       <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
         <app-input label="Name" [control]="cardForm.get('name')"></app-input>
         <app-input label="Card Number" [control]="cardForm.get('cardNumber')"></app-input>
@@ -28,8 +24,7 @@
 
         <div class="buttons">
 
-          <button class="button" [ngClass]="{'is-danger':cardForm.invalid,'is-primary':cardForm.valid}" type="submit"
-                  [disabled]="cardForm.invalid">Submit
+          <button class="button" [ngClass]="{'is-danger':cardForm.invalid,'is-primary':cardForm.valid}" type="submit" [disabled]="cardForm.invalid">Submit
           </button> <button class="button is-warning" type="button" (click)="onReset()"> Reset</button>
         </div>
 
