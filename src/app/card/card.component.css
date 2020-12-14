@@ -5,7 +5,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 :host {
   display: block;
-  height: 250px;
+  height: 200px;
 }
 
 .container {
@@ -117,12 +117,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .creditcard .grey {
-  fill: #bdbdbd;
+  fill: #fff;
 }
 
-.creditcard .greydark {
-  fill: #616161;
-}
+
 
 /* FRONT OF CARD */
 #svgname {
@@ -130,7 +128,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 #cardfront .st2 {
-  fill: #ffffff;
+  fill: #ffdd57b8;
 }
 
 #cardfront .st3 {

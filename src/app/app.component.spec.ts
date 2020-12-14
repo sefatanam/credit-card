@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'cardpayment'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cardpayment');
+    expect(app.title).toEqual('creditcardinfo');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('cardpayment app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('creditcardinfo app is running!');
   });
 });

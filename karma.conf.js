@@ -19,7 +19,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/cardpayment'),
+      dir: require('path').join(__dirname, './coverage/creditcardinfo'),
       subdir: '.',
       reporters: [
         { type: 'html' },
